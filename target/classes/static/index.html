@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LedgerCore — Finance Intelligence</title><link rel="stylesheet" href="/styles.css"></head><body>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-symbol">◈</div><div><strong>Ledger<span>Core</span></strong><small>FINANCIAL INTELLIGENCE</small></div></div>
+  <div class="nav-heading">WORKSPACE</div>
+  <nav id="nav">
+    <button class="nav-link active" data-view="overview"><span class="nav-icon">▦</span> Overview</button>
+    <button class="nav-link" data-view="transactions"><span class="nav-icon">⇄</span> Transactions</button>
+    <button class="nav-link" data-view="accounts"><span class="nav-icon">▣</span> Accounts</button>
+    <button class="nav-link" data-view="budgets"><span class="nav-icon">◫</span> Budgets</button>
+    <button class="nav-link" data-view="insights"><span class="nav-icon">⌁</span> Analytics</button>
+  </nav>
+  <div class="nav-heading tools-heading">QUICK ACTIONS</div>
+  <button class="nav-link" data-modal="transfer"><span class="nav-icon">↗</span> Transfer money</button>
+  <button class="nav-link" data-modal="expense"><span class="nav-icon">＋</span> Add expense</button>
+  <button class="nav-link" data-modal="income"><span class="nav-icon">↓</span> Add income</button>
+  <div class="sidebar-bottom"><div class="avatar">LC</div><div><strong>Demo Workspace</strong><small>Local · Simulated finances</small></div><span class="online"></span></div>
+</aside>
+<div class="main-column">
+  <header class="topbar"><div class="crumb">WORKSPACE <span>/</span> <strong id="crumb-title">Overview</strong></div><div class="top-actions"><span class="chip"><span class="live-dot"></span> LOCAL DEMO</span><button class="icon-btn" id="refresh-btn" title="Refresh live data" aria-label="Refresh data">↻</button><div class="avatar top-avatar">LC</div></div></header>
+  <main id="content" aria-live="polite"></main>
+</div>
+</div>
+<div id="modal-layer" class="modal-layer hidden" role="presentation"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-header"><div><span class="eyebrow">LEDGERCORE / ACTION CENTER</span><h2 id="modal-title">Transfer funds</h2></div><button id="close-modal" class="icon-btn" aria-label="Close dialog">✕</button></div><form id="modal-form"><div id="modal-fields"></div><p class="form-note">All accounts and transactions are simulated. Changes are stored in your local H2 database.</p><p id="form-error" class="form-error hidden" role="alert"></p><div class="modal-actions"><button type="button" id="cancel-modal" class="btn ghost">Cancel</button><button type="submit" class="btn primary" id="submit-modal">Confirm</button></div></form></div></div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="/app.js" defer></script></body></html>
