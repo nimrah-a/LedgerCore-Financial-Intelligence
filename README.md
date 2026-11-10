@@ -1,5 +1,27 @@
 # LedgerCore — Financial Transaction Intelligence
 
+### Financial Overview
+
+Interactive financial dashboard featuring account balances,
+cash flow analytics, and spending breakdowns.
+
+![LedgerCore Financial Overview](financial-overview.png)
+
+### Account Management
+
+Manage simulated checking and savings accounts,
+view transaction history, and transfer funds.
+
+![LedgerCore Accounts](accounts-dashboard.png)
+
+### Budget Planner
+
+Track spending by category, manage monthly limits,
+and monitor remaining budget allocations.
+
+![LedgerCore Budget Planner](budget-planner.png)
+
+
 **Java 21 / Spring Boot / REST API / H2 SQL / HTML / CSS / JavaScript / JUnit 5**
 
 LedgerCore is an interactive, local-first financial dashboard with a fully functional Java backend. Its simulated data is persisted in a local SQL database, and the browser dashboard reads and updates that data through REST endpoints. Inspired by modern fintech dashboards, it emphasizes thoughtful UX while demonstrating real backend engineering.
